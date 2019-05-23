@@ -286,13 +286,13 @@ section {
     padding: 0px;
     font-size: 16px;
   }
-  #link-about {
+  .link-about {
     grid-area: a;
   }
-  #link-experience {
+  .link-experience {
     grid-area: b;
   }
-  #link-reason {
+  .link-reason {
     grid-area: c;
   }
 
