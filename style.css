@@ -63,6 +63,7 @@ section {
 }
 
 .sidebar {
+  z-index: 100;
   display: flex;
   align-items: center;
   position: fixed;
@@ -245,85 +246,7 @@ section {
   margin-top: 40px;
 }
 
-@media screen and (max-width: 425px) {
-  body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 240px 1fr 1fr;
-    grid-template-areas:
-      'sidebar'
-      'about'
-      'experience'
-      'skill';
-  }
-  .sidebar {
-    width: 100%;
-    height: auto;
-    padding: 20px 0px;
-  }
-  section {
-    padding: 0px 30px;
-  }
-
-  .photo {
-    margin: auto;
-    width: 150px;
-  }
-
-  .nav > ul {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 100px 100px 100px 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: '. a b c .';
-  }
-
-  .nav {
-    width: 100vw;
-    padding-top: 10px;
-  }
-  .nav > ul > li {
-    padding: 0px;
-    font-size: 16px;
-  }
-  .link-about {
-    grid-area: a;
-  }
-  .link-experience {
-    grid-area: b;
-  }
-  .link-reason {
-    grid-area: c;
-  }
-
-  #about {
-    padding-bottom: 30px;
-  }
-  .title {
-    display: flex;
-  }
-  .title > h1 {
-    margin-left: 50px;
-  }
-
-  .title > p {
-    padding-top: 20px;
-    padding-left: 10px;
-  }
-
-  .icon > ul {
-    justify-content: center;
-  }
-
-  .list {
-    display: block;
-  }
-
-  #experience {
-    padding: 30px;
-  }
-  .indro {
-    font-size: 22px;
-    line-height: 1.5;
-  }
+.animated {
+  -webkit-animation-fill-mode: none !important;
+  animation-fill-mode: none !important;
 }
