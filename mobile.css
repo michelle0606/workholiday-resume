@@ -1,7 +1,7 @@
 @media screen and (max-width: 425px) {
   body {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: 240px 1fr 1fr;
     grid-template-areas:
       'sidebar'
@@ -10,6 +10,7 @@
       'skill';
   }
   .sidebar {
+    position: relative;
     width: 100%;
     height: auto;
     padding: 20px 0px;
@@ -35,6 +36,7 @@
     width: 100vw;
     padding-top: 10px;
   }
+
   .nav > ul > li {
     padding: 0px;
     font-size: 16px;
